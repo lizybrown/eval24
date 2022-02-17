@@ -1,0 +1,31 @@
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-image: url("..img\pexels-cátia-matos-1072179");
+
+
+}
+
+div{
+
+    background-color: aquamarine;
+    padding: 1rem;
+    width: 95%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
