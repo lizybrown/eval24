@@ -20,34 +20,33 @@
 
 let randomNumberFloor = Math.floor(Math.random()*1000);
 
-let tentacles = prompt("Choisis un nombre entre 1-1000:");
-tentacles = Number
+let tentacles;
+
+tentacles = Number(tentacles) //ici si tu souhaite convertir ta variable en nombre
 
 let compte = 0
 
 
 function devine(){
-    if (tentacles === randomNumberFloor){
-        alert("bien ouej cow-boy!! U winnnn");
-        // let compte = ++1;
-        alert("vous avez joué : " + compte);
-        
+    /* La tu a juste une erreur de structure 
+        Comme tu le fait avec des prompt il faut une boucle 
+        while pour réactivé le prompt tant que la saisis est différente du nombre à trouvé*/
 
+    while(tentacles != randomNumberFloor){ // le triple égal verifie la valeur et le type, cela à surement du provoqué une erreur a cause de la ligne 25
+       tentacles = prompt("Choisis un nombre entre 1-1000:");
+        if(tentacles < randomNumberFloor) {
+            tentacles <= randomNumberFloor;
+            // let compte = ++1;
+            alert("cherches plus haut!");
+        }else if(tentacles > randomNumberFloor){
+            // let compte = ++1;
+            alert("cherches plus bas!");
+        }else{
+            alert("bien ouej cow-boy!! U winnnn");
+            // let compte = ++1;
+            alert("vous avez joué : " + compte);
+        }   
     }
-    
-    
-    
-    
-    else {
-        tentacles <= randomNumberFloor;
-        // let compte = ++1;
-        alert("cherches plus haut!");
-    }
-
-    {
-        // let compte = ++1;
-        alert("cherches plus bas!");
-    }   
 
 
 }
